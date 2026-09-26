@@ -78,6 +78,11 @@ discussion so we can point you at the code.
 - **Script consolidation.** Merge the overlapping Linux build/test scripts and
   keep the helper scripts as cross-platform pairs.
 
+- **Physics twin coverage.** The Chaos-resident twin mirrors bodies, primitive geoms,
+  scalar joints, and affine actuators today. Remaining gaps: tendons and their
+  transmissions, deformation (flexcomp), equality softness, heightfield and SDF
+  collision, and muscle activation dynamics.
+
 ## Known issues
 
 - Mesh import loses fine-grained normals on UE 5.7 (the GLTF importer lacks

@@ -93,6 +93,7 @@ nav:
     - Importing Robots: guides/importing.md
     - Articulations: guides/articulations.md
     - Geometry & Collision: guides/geometry.md
+    - UE Physics Twin: guides/chaos_twin.md
     - Sensors & Cameras: guides/sensors_cameras.md
     - Controllers: guides/controllers.md
     - Simulate Dashboard: guides/dashboard.md
