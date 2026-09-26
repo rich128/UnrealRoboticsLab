@@ -6,6 +6,21 @@ URLab is in **alpha**: the public API and on-disk formats are not yet stable, an
 a milestone can include breaking changes. A first **beta** will follow once the
 feature set settles.
 
+## Unreleased
+
+### Added
+
+- **UE physics twin.** `UMjTwinComponent` builds a native Unreal Engine replica of a
+  compiled MJCF model and runs it on Chaos: rigid bodies with the model's combined
+  mass properties, native collision shapes for every primitive geom, constraints with
+  the model's joint limits, and force generators that evaluate MuJoCo's own actuator
+  law. The translation lives in `FMjTwinDescriptor` / `FMjTwinDescriptorBuilder`
+  (`Source/URLab/Public/MuJoCo/Twin/`), is engine-independent, and is covered by the
+  `URLab.Twin.*` automation tests. `FMjTwinReport` records an
+  Exact / Approximate / Unsupported verdict per mirrored element, and
+  `ComputeDivergence()` measures the twin against the running MuJoCo simulation. See
+  [UE Physics Twin](guides/chaos_twin.md).
+
 ## v0.5.0-alpha (2026-06-14)
 
 The render-pipeline, codegen, and tooling milestone.
