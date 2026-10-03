@@ -110,6 +110,7 @@ nav:
     - Networking: concepts/networking.md
     - Codegen: concepts/codegen.md
     - MJCF Support: concepts/mjcf_support.md
+    - MuJoCo → UE5 Constraints: concepts/mujoco_to_ue5_constraints.md
   - Contributing:
     - Building from Source: contributing/building.md
     - Codegen: contributing/codegen.md
